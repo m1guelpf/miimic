@@ -1,0 +1,7 @@
+[package]
+name = "miimic"
+license = "MIT"
+version = "0.1.0"
+crate = "miimic_ffi"
+description = "FFI bindings for miimic."
+repository = "https://github.com/m1guelpf/miimic"

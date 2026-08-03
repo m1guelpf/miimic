@@ -1,0 +1,21 @@
+[workspace]
+resolver = "3"
+members = ["miimic", "miimic-cli", "miimic-ffi", "miimic-server"]
+
+[workspace.package]
+version = "0.1.0"
+edition = "2024"
+license = "MIT"
+readme = "README.md"
+repository = "https://github.com/m1guelpf/miimic"
+authors = ["Miguel Piedrafita <rust@miguel.build"]
+
+[workspace.dependencies]
+miimic = { version = "0.1.0", path = "miimic" }
+
+[workspace.lints.rust]
+unsafe_code = "forbid"
+
+[workspace.lints.clippy]
+todo = "deny"
+dbg_macro = "deny"

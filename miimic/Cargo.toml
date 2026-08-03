@@ -1,0 +1,32 @@
+[package]
+name = "miimic"
+description = "A Mii renderer, written in Rust."
+readme.workspace = true
+version.workspace = true
+edition.workspace = true
+license.workspace = true
+authors.workspace = true
+repository.workspace = true
+
+[features]
+serde = ["dep:serde"]
+
+[dependencies]
+hex = "0.4"
+glam = "0.32"
+sha2 = "0.10"
+wgpu = "30.0.0"
+base64 = "0.23"
+thiserror = "2"
+pollster = "0.4"
+serde_json = "1"
+num_enum = "0.7.6"
+num-traits = "0.2"
+bytemuck = { version = "1.24", features = ["derive"] }
+serde = { version = "1", features = ["derive"], optional = true }
+flate2 = { version = "1.1", default-features = false, features = ["rust_backend"] }
+image = { version = "0.25.10", default-features = false, features = ["png", "tga"] }
+gltf = { version = "1.4.1", default-features = false, features = ["extras", "names"] }
+
+[lints]
+workspace = true
